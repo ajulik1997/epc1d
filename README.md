@@ -2,6 +2,8 @@
 
 One-dimensional particle-in-cell code written in Cython for simulating Landau damping and the two-stream instability.
 
+<img src="https://github.com/ajulik1997/epc1d/blob/master/example.gif" alt="Two-stream instability">
+
 ## Quick-start
 
 Compile Cython code with: `./compile.sh`
