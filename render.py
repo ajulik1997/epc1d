@@ -31,7 +31,7 @@ def render_pv(data):
     colourmap = cm.get_cmap("plasma", len(data["positions"][0]))
     fig = plt.figure(figsize=[16,9])
     ax = fig.add_axes([0, 0, 1, 1]); ax.axis('off')
-    phase_plot = ax.scatter(data["positions"][0], data["velocities"][0], s=32, c=colourmap.colors, marker=".", alpha=0.5)
+    phase_plot = ax.scatter(data["positions"][0], data["velocities"][0], s=4, c=colourmap.colors, marker=".", alpha=0.1)
     ax.set_xlim((np.min(data["positions"]), np.max(data["positions"])))
     ax.set_ylim((np.min(data["velocities"]), np.max(data["velocities"])))
     
