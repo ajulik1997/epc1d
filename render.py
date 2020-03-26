@@ -123,8 +123,9 @@ def gen_pv_frames(data, colourmap, name, index, padding):
 			phase_plot.set_color(colourmap[chunk])
 			ax.draw_artist(phase_plot)	# draw computed particles to image
 		
-		# save generated image for stitching
+		# save generated image for stitching and close figure
 		png_write(fig, f"{name}/{frame:0{padding}}.png")
+		plt.close(fig)
 
 def gen_all_frames(data, colourmap, name, index, padding):
 	"""Generates and saves frames with all computed data to temporary folder
