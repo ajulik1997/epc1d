@@ -2,7 +2,7 @@
 
 One-dimensional particle-in-cell code written in Cython for simulating Landau damping and the two-stream instability.
 
-<img src="https://github.com/ajulik1997/epc1d/blob/master/example.gif" alt="Two-stream instability">
+<img src="https://github.com/ajulik1997/epc1d/blob/master/example.gif" alt="Two-stream instability (full view)">
 
 ## Quick-start
 
@@ -10,7 +10,7 @@ Compile Cython code with: `./compile.sh`
 
 Generate default two-stream instability data: `./epc1d --twostream`
 
-Render to video: `python render.py tmp.npz`
+Render to video: `python render.py tmp.npz` (ensure `ffmpeg` is available)
 
 ## Arguments
 
@@ -28,3 +28,11 @@ Render to video: `python render.py tmp.npz`
 |    `--time`   	|  `-T` 	| float 	|                     20                    	|  normalised time  	|                Optional               	|
 |   `--steps`   	|  `-s` 	|  int  	|                     50                    	|     time steps    	|                Optional               	|
 |    `--name`   	|  `-n` 	|  str  	|                    tmp                    	|                   	|                Optional               	|
+
+## Examples
+
+- 22500 particles, 10000 steps, full view: [link](https://mega.nz/file/t1pD3JbQ#NHD7XyDFssapQbd9zTxML9my6iaDc2K5EctsXqsPpl4)
+- 500000 particles, 1000 steps, full view: [link](https://mega.nz/file/5sx1Qb4A#B-bHV7i5HWAP1s-aSH9-cidjtT1f4snYspV2qPvX1Po)
+- 1000000 particles, 1400 steps, part-view (shown below): [link](https://mega.nz/file/I0xD2b7C#E5DfHJJ58yqeyOLJSvPMc8shwWS30MUZsMDDsaa5O8M)
+
+<img src="https://github.com/ajulik1997/epc1d/blob/master/example2.gif" alt="Two-stream instability (pv view)">
